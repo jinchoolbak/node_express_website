@@ -4,23 +4,13 @@ html(lang="ko")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title 웹디자이너 박진출 포트폴리오 웹사이트
+        script(src="https://kit.fontawesome.com/a44593fe97.js" crossorigin="anonymous")
+        link(rel="stylesheet", href="css/reset.css")
+        link(rel="stylesheet", href="css/style.css")
     body 
-    header 
-        div(class="container")
-            div(class="logo_text") jinchool bak 
-            nav 
-                ul(id="gnb")
-                    li 
-                        a(href="/") home 
-                    li 
-                        a(href="/about") about 
-                    li 
-                        a(href="/portfolio") portfolio
-                    li 
-                        a(href="/contact") contact
-    main 
-        article 
-            p 포트폴리오를 준비중입니다.
-    footer 
-        hr
-        p copyright$copy; jinchool. 2023 all rights reserved.
+        include includes/comm_header.pug
+        main(class="t-center")
+            article 
+                p 포트폴리오 페이지를 준비중입니다
+        include includes/comm_footer.pug
+    
