@@ -8,9 +8,66 @@ html(lang="ko")
         link(rel="stylesheet", href="css/reset.css")
         link(rel="stylesheet", href="css/style.css")
     body 
+        h1(class="d-none") home
         include includes/comm_header.pug
-        main(class="t-center")
+        main
+            h2(class="d-none") home-main
             article 
-                p 메인페이지를 준비중입니다
+                h3(class="t-center py2") About 
+                div(class="container_small d-flex j-between")
+                    div(class="avatar")
+                        img(src="images/avata.jpg", alt="내사진")
+                    div(class="about")    
+                        div(class="info d-flex g3")
+                            ul 
+                                li Title
+                                li text: text
+                                li text: text
+                                li text: text
+                                li text: text
+                            ul 
+                                li Title
+                                li text: text
+                                li text: text
+                                li text: text
+                        div(class="skills")
+                            ul(class="d-flex") 
+                                li skills
+                                li skills
+                                li skills
+                                li skills
+            article 
+                h3(class="t-center py2") Portfolio 
+                div(class="container_small d-flex j-between")
+                    div(class="port_img")
+                        img(src="images/port1.jpg", alt="작업물1")
+                    div(class="portfolio")    
+                        div(class="p-info")
+                            ul 
+                                li Title
+                                li text: text
+                                li text: text
+                                li text: text
+                        div(class="links")
+                            ul(class="d-flex") 
+                                li link
+                                li link
+                                li link
+            article 
+                h3(class="t-center py2") Poster 
+                div(class="container d-flex j-center g3")
+                    div(class="sns_img")
+                        ul(class="d-flex g1 my1") 
+                            li(class="pos1") 
+                                img(src="images/poster1.jpg", alt="포스터1")
+                            li(class="pos2") 
+                                img(src="images/poster2.jpg", alt="포스터2")
+                        ul(class="d-flex g1") 
+                            li(class="pos3") 
+                                img(src="images/poster3.jpg", alt="포스터3")
+                            li(class="pos4") 
+                                img(src="images/poster4.jpg", alt="포스터4")
+                            
+
         include includes/comm_footer.pug
     

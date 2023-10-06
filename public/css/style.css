@@ -7,6 +7,9 @@
 }
 
 /*-------------------common style--------------------------*/
+.d-none {
+    display: none;
+}
 .d-flex {
     display: flex;
 }
@@ -35,6 +38,16 @@
     padding: 3rem 0;
 }
 
+.my1 {
+    margin: 1rem 0;
+}
+.my2 {
+    margin: 2rem 0;
+}
+.my3 {
+    margin: 3rem 0;
+}
+
 .j-center {
     justify-content: center;
 }
@@ -57,11 +70,16 @@
 .t-center {
     text-align: center;
 }
-/*-------------------header--------------------------*/
+
 .container {
-    max-width: 1500px;
+    max-width: 1440px;
     margin: 0 auto;
 }
+.container_small {
+    max-width: 700px;
+    margin: 0 auto;
+}
+/*-------------------header--------------------------*/
 
 .slogan_title {
     font-size: 7rem;
@@ -89,4 +107,46 @@
 .btn_request:hover {
     background: var(--secondary-color);
     margin-left: .5rem;
+}
+/*---------------main-about----------------------*/
+.avatar {
+    width: 300px;
+    height: 300px;
+    background: var(--third-color);
+}
+
+.info {
+    height: 200px;
+    background: blueviolet;
+}
+.skills {
+    background: rgb(202, 146, 255);
+    height: 100px;
+}
+
+/*---------------main-portfolio----------------------*/
+.port_img {
+    width: 400px;
+    height: 300px;
+    background: var(--third-color);
+}
+
+.p-info {
+    height: 200px;
+    background: blueviolet;
+}
+.links {
+    background: rgb(202, 146, 255);
+    height: 100px;
+}
+/*---------------main-poster----------------------*/
+.pos1, .pos4 {
+    background: blueviolet;
+    width: 300px;
+    height: 150px;
+}
+.pos2, .pos3 {
+    background: rgb(202, 146, 255);
+    width: 400px;
+    height: 150px;
 }
