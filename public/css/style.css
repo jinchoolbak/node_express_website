@@ -171,4 +171,17 @@
     border: 0;
     background: var(--third-color);
     border-radius: 30px;
+    padding: .5rem;
+}
+
+.c-btn > button:hover {
+    background: burlywood;
+    color: var(--primary-color);
+}
+
+/*---------------portfolio-next-prev----------------------*/
+.n-img {
+    width: 400px;
+    height: 300px;
+    background: var(--third-color);
 }
