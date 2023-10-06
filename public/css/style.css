@@ -108,7 +108,8 @@
     background: var(--secondary-color);
     margin-left: .5rem;
 }
-/*---------------main-about----------------------*/
+
+/*---------------home-about----------------------*/
 .avatar {
     width: 300px;
     height: 300px;
@@ -124,7 +125,7 @@
     height: 100px;
 }
 
-/*---------------main-portfolio----------------------*/
+/*---------------home-portfolio----------------------*/
 .port_img {
     width: 400px;
     height: 300px;
@@ -139,7 +140,7 @@
     background: rgb(202, 146, 255);
     height: 100px;
 }
-/*---------------main-poster----------------------*/
+/*---------------home-poster----------------------*/
 .pos1, .pos4 {
     background: blueviolet;
     width: 300px;
@@ -149,4 +150,25 @@
     background: rgb(202, 146, 255);
     width: 400px;
     height: 150px;
+}
+
+/*---------------about-----------------------*/
+.a-img {
+    width: 200px;
+    height: 100px;
+    background: var(--third-color);
+}
+/*---------------portfolio-----------------------*/
+.c-img {
+    width: 1200px;
+    height: 500px;
+    background: var(--third-color);
+    margin: 0 auto;
+}
+
+.c-btn > button {
+    font-size: 1.5rem;
+    border: 0;
+    background: var(--third-color);
+    border-radius: 30px;
 }

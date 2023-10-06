@@ -9,8 +9,18 @@ html(lang="ko")
         link(rel="stylesheet", href="css/style.css")
     body 
         include includes/comm_header.pug
-        main(class="t-center")
-            article 
-                p 포트폴리오 페이지를 준비중입니다
+        h1(class="d-none") portfolio
+        main
+            h2(class="d-none") portfolio-main
+            article
+                h3(class="t-center py2") Portfolio 
+                div(class="container")
+                    div(class="carousel")
+                        div(class="c-img")
+                            img(src="images/c1.jpg", alt="케러셀1")
+                        div(class="c-btn d-flex j-center g1 py1") 
+                            button(type="button") o
+                            button(type="button") O
+                            button(type="button") o
         include includes/comm_footer.pug
     
