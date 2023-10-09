@@ -64,6 +64,12 @@
     background: url("../images/coverimg.jpg") no-repeat center /cover;
 }
 
+.t-bold {
+    font-weight: bold;
+}
+.t-upper {
+    font-size: 1.5rem;
+}
 .t-white {
     color: var(--secondary-color);
 }
@@ -111,15 +117,24 @@
 
 /*---------------home-about----------------------*/
 .avatar {
-    width: 300px;
+    width: 250px;
     height: 300px;
-    background: var(--third-color);
+    text-align: center;
+}
+
+.about > span.span {
+    font-weight: bold;
 }
 
 .info {
     height: 200px;
     background: blueviolet;
 }
+
+.info li {
+    margin: 0.3rem 0;
+}
+
 .skills {
     background: rgb(202, 146, 255);
     height: 100px;
@@ -127,12 +142,13 @@
 
 /*---------------home-portfolio----------------------*/
 .port_img {
-    width: 400px;
+    width: 500px;
     height: 300px;
     background: var(--third-color);
 }
 
 .p-info {
+    width: 200px;
     height: 200px;
     background: blueviolet;
 }
@@ -141,16 +157,27 @@
     height: 100px;
 }
 /*---------------home-poster----------------------*/
+.prev, .next {
+    padding: 0 5px;
+    line-height: 300px;
+    font-size: 1.5rem;
+}
+
+.pos_img {
+    margin-bottom: 2rem;
+}
 .pos1, .pos4 {
     background: blueviolet;
-    width: 300px;
-    height: 150px;
+    width: 290px;
+    height: 300px;
 }
 .pos2, .pos3 {
     background: rgb(202, 146, 255);
-    width: 400px;
-    height: 150px;
+    width: 390px;
+    height: 300px;
 }
+
+
 
 /*---------------about-----------------------*/
 .a-img {

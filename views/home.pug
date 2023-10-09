@@ -16,56 +16,83 @@ html(lang="ko")
                 h3(class="t-center py2") About 
                 div(class="container_small d-flex j-between")
                     div(class="avatar")
-                        img(src="images/avata.jpg", alt="내사진")
+                        img(src="images/avata.jpg" wdith="210px" height="270px", alt="내사진")
                     div(class="about")    
                         div(class="info d-flex g3")
                             ul 
-                                li Title
-                                li text: text
-                                li text: text
-                                li text: text
-                                li text: text
+                                li(class="t-upper t-bold") Profile
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") 생년월일
+                                    p 2001.08.23
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") 이름 
+                                    p 박진출
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") 이메일 
+                                    p qkrwlscnf2@naver.com
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") 연락처 
+                                    p 010.6890.9059
                             ul 
-                                li Title
-                                li text: text
-                                li text: text
-                                li text: text
+                                li(class="t-upper t-bold") Certificate
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") GTQ 
+                                    p 2023.8
                         div(class="skills")
                             ul(class="d-flex") 
-                                li skills
-                                li skills
-                                li skills
-                                li skills
+                                li
+                                    img(src="images/ps.png", alt="포토샵")
+                                li
+                                    img(src="images/ai.png", alt="일러스트")
+                                li
+                                    img(src="images/js.png", alt="자바스크립트")
+                                li
+                                    img(src="images/ghub.png", alt="깃허브")
             article 
                 h3(class="t-center py2") Portfolio 
                 div(class="container_small d-flex j-between")
+                    div(class="prev")
+                        i(class="fa-solid fa-angle-left")
                     div(class="port_img")
-                        img(src="images/port1.jpg", alt="작업물1")
+                        img(src="images/port1.png" width="500px" height="300px", alt="작업물1")
                     div(class="portfolio")    
                         div(class="p-info")
                             ul 
-                                li Title
-                                li text: text
-                                li text: text
-                                li text: text
+                                li(class="t-upper t-bold") Title
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") text  
+                                    p text 
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") text 
+                                    p text 
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") text 
+                                    p text 
                         div(class="links")
                             ul(class="d-flex") 
-                                li link
-                                li link
-                                li link
+                                li 
+                                    a(href="#") 이미지보기 
+                                li 
+                                    a(href="#") 소스보기
+                    div(class="next")
+                        i(class="fa-solid fa-angle-right")
             article 
                 h3(class="t-center py2") Poster 
                 div(class="container d-flex j-center g3")
-                    div(class="sns_img")
+                    div(class="pos_img")
                         ul(class="d-flex g1 my1") 
-                            li(class="pos1") 
-                                img(src="images/poster1.jpg", alt="포스터1")
-                            li(class="pos2") 
-                                img(src="images/poster2.jpg", alt="포스터2")
+                            li(class="pos1")
+                                a(href="#")  
+                                    img(src="images/pos1.jpg" width="300px" height="300px", alt="포스터1")
+                            li(class="pos2")
+                                a(href="#")  
+                                    img(src="images/pos2.png" width="400px" height="300px", alt="포스터2")
                         ul(class="d-flex g1") 
-                            li(class="pos3") 
-                                img(src="images/poster3.jpg", alt="포스터3")
-                            li(class="pos4") 
-                                img(src="images/poster4.jpg", alt="포스터4")
+                            li(class="pos3")
+                                a(href="#")  
+                                    img(src="images/pos3.jpg" width="400px" height="300px", alt="포스터3")
+                            li(class="pos4")
+                                a(href="#")  
+                                    img(src="images/pos4.png" width="300px" height="300px", alt="포스터4")
         include includes/comm_footer.pug
     
