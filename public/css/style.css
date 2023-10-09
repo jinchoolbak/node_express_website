@@ -185,3 +185,48 @@
     height: 300px;
     background: var(--third-color);
 }
+/*---------------contact----------------------*/
+.c-wrap {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#sortation {
+    border-top: 1px solid var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+    padding: 0.5rem;
+}
+
+#sortation li:nth-child(1) {
+    margin-right: 25%;
+    font-weight: 600;
+}
+
+#form li {
+    align-items: center;
+    padding: .2rem;
+    font-weight: 700;
+}
+
+#form li input {
+    width: 200px;
+    height: 40px;
+}
+
+#form {
+    width: 300px;
+    margin: 2rem auto;
+}
+
+.send > button {
+    display: block;
+    margin: 1rem auto;
+    background: burlywood;
+    border: 0;
+    padding: 1rem;
+}
+
+.send > button:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}

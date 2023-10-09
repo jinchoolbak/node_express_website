@@ -9,7 +9,37 @@ html(lang="ko")
         link(rel="stylesheet", href="css/style.css")
     body 
         include includes/comm_header.pug
-        main(class="t-center")
-            article 
-                p 컨텍트페이지를 준비중입니다.
+        h1(class="d-none") contact 
+        main
+            h2(class="d-none") contact-main 
+            article(class="c-wrap")
+                h3(class="t-center py2") Contact
+                div(id="sortation")
+                    ul(class="d-flex g1")
+                        li 구분
+                        li(class="d-flex") 
+                            input(type="checkbox", name="작업요청")
+                            p 작업요청
+
+                        li(class="d-flex")
+                            input(type="checkbox", name="문의")
+                            p 문의
+                div(id="form" class="my2") 
+                    ul 
+                        li(class="d-flex j-between")
+                            p 이름
+                            input(type="text" placeholder="예)홍길동")
+                        li(class="d-flex j-between")
+                            p 연락처
+                            input(type="text" placeholder="예)000-0000-0000")
+                        li(class="d-flex j-between")
+                            p 제목
+                            input(type="text" placeholder="예)제목을 입력하세요.") 
+                        li(class="d-flex j-between")
+                            p 내용
+                            input(type="text" placeholder="예)내용을 입력하세요.") 
+                div(class="send") 
+                    button(type="button") 보내기
+         
+
         include includes/comm_footer.pug
