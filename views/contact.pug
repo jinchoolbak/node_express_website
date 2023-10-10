@@ -13,33 +13,39 @@ html(lang="ko")
         main
             h2(class="d-none") contact-main 
             article(class="c-wrap py2")
-                h3(class="t-center py3") Contact
-                div(id="sortation")
-                    ul(class="d-flex g1")
-                        li 구분
-                        li(class="d-flex") 
-                            input(type="checkbox", name="작업요청" checked)
-                            p 작업요청
+                form(action="/contactAdd", method="post") 
+                    div(class="py3")
+                        h3(class="t-center") Contact & Request 
+                        h4(class="t-center t-upper") 작업요청 및 문의
+                    div(id="sortation")
+                        ul(class="d-flex g1")
+                            li 구분
+                            li(class="d-flex") 
+                                input(type="radio", name="type", checked, value="1")
+                                p 요청
 
-                        li(class="d-flex")
-                            input(type="checkbox", name="문의")
-                            p 문의
-                div(id="form" class="my2") 
-                    ul 
-                        li(class="d-flex j-between")
-                            p 이름
-                            input(type="text" placeholder="예)홍길동")
-                        li(class="d-flex j-between")
-                            p 연락처
-                            input(type="text" placeholder="예)000-0000-0000")
-                        li(class="d-flex j-between")
-                            p 제목
-                            input(type="text" placeholder="예)제목을 입력하세요.") 
-                        li(class="d-flex j-between")
-                            p 내용
-                            input(type="text" placeholder="예)내용을 입력하세요.") 
-                div(class="send") 
-                    button(type="button") 보내기
+                            li(class="d-flex")
+                                input(type="radio", name="type")
+                                p 문의
+                    div(id="form" class="my2") 
+                        ul 
+                            li(class="d-flex j-between")
+                                p 이름
+                                input(type="text", name ="name", placeholder="예)홍길동")
+                            li(class="d-flex j-between")
+                                p 연락처
+                                input(type="text", name="phone", placeholder="예)000-0000-0000")
+                            li(class="d-flex j-between")
+                                p 이메일
+                                input(type="text", name="email", placeholder="예)abcdefg@naver.com")
+                            li(class="d-flex j-between")
+                                p 제목
+                                input(type="text", name="title", placeholder="예)제목을 입력하세요.") 
+                            li(class="d-flex j-between")
+                                p 내용
+                                textarea(name="memo", placeholder="예)내용을 입력하세요.") 
+                    div(class="send") 
+                        button(type="submit") 보내기
          
 
         include includes/comm_footer.pug

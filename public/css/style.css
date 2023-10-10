@@ -126,9 +126,9 @@ hr {
 
 .btn_request {
     font-weight: bold;
-    width: 5rem;
+    width: 6rem;
     height: 2rem;
-    border-radius: 2rem;
+    border-top-left-radius: 1rem;
     border: 0;
     background: rgb(243, 94, 8);
     color: var(--primary-color);
@@ -146,8 +146,8 @@ hr {
     text-align: center;
 }
 
-.about > span.span {
-    font-weight: bold;
+.avatar img {
+    border-radius: 50%;
 }
 
 .info-l  {
@@ -241,7 +241,6 @@ hr {
     width: 350px;
     height: 300px;
     margin: 2rem 0;
-    background: var(--third-color);
 }
 
 .n-img img {
@@ -250,7 +249,8 @@ hr {
 }
 
 .n-img li {
-    background-color: var(--third-color);
+    background-color: rgb(87, 87, 248);
+    color: var(--secondary-color);
     border: 0;
     border-radius: 30px;
     margin: 1rem 0;
@@ -284,8 +284,9 @@ hr {
     height: 40px;
 }
 
-#form li:last-child input {
-    height: 150px;
+#form textarea {
+    width: 202px;
+    height: 100px;
 }
 
 #form {
