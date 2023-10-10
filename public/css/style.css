@@ -13,6 +13,9 @@
 .d-flex {
     display: flex;
 }
+.d-grid {
+    display: grid;
+}
 
 .f-column {
     flex-direction: column;
@@ -27,6 +30,12 @@
 .g3 {
     gap: 3rem;
 }
+.g4 {
+    gap: 4rem;
+}
+.g5 {
+    gap: 5rem;
+}
 
 .py1 {
     padding: 1rem 0;
@@ -36,6 +45,10 @@
 }
 .py3 {
     padding: 3rem 0;
+}
+
+.pl2 {
+    padding-left: 2rem;
 }
 
 .my1 {
@@ -117,8 +130,8 @@
 
 /*---------------home-about----------------------*/
 .avatar {
-    width: 250px;
-    height: 300px;
+    width: 210px;
+    height: 270px;
     text-align: center;
 }
 
@@ -126,13 +139,18 @@
     font-weight: bold;
 }
 
-.info {
-    height: 200px;
-    background: blueviolet;
+.info-l  {
+    width: 420px;
+    height: 120px;
+}
+.info-r {
+    width: 600px;
+    height: 120px;
 }
 
-.info li {
+.info-l li, .info-r li {
     margin: 0.3rem 0;
+    padding-left: 3rem;
 }
 
 .skills {
@@ -238,6 +256,10 @@
 #form li input {
     width: 200px;
     height: 40px;
+}
+
+#form li:last-child input {
+    height: 150px;
 }
 
 #form {

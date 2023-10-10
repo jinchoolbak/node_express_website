@@ -14,40 +14,42 @@ html(lang="ko")
             h2(class="d-none") home-main
             article 
                 h3(class="t-center py2") About 
-                div(class="container_small d-flex j-between")
+                div(class="container d-flex j-center")
                     div(class="avatar")
                         img(src="images/avata.jpg" wdith="210px" height="270px", alt="내사진")
-                    div(class="about")    
-                        div(class="info d-flex g3")
-                            ul 
-                                li(class="t-upper t-bold") Profile
-                                li(class="d-flex g1") 
-                                    p(class="t-bold") 생년월일
-                                    p 2001.08.23
+                    div(class="about")
+                        div(class="info-l")
+                            h3(class="t-upper pl2 py1") Profile
+                            ul(class="d-flex j-between") 
                                 li(class="d-flex g1") 
                                     p(class="t-bold") 이름 
                                     p 박진출
                                 li(class="d-flex g1") 
-                                    p(class="t-bold") 이메일 
-                                    p qkrwlscnf2@naver.com
+                                    p(class="t-bold") 생년월일
+                                    p 2001.08.23
+                        div(class="info-r")
+                            ul(class="d-flex") 
                                 li(class="d-flex g1") 
                                     p(class="t-bold") 연락처 
                                     p 010.6890.9059
+                                li(class="d-flex g1") 
+                                    p(class="t-bold") 이메일 
+                                    p qkrwlscnf2@naver.com
+                            h3(class="t-upper t-bold pl2 py1") Certificate
                             ul 
-                                li(class="t-upper t-bold") Certificate
                                 li(class="d-flex g1") 
                                     p(class="t-bold") GTQ 
                                     p 2023.8
-                        div(class="skills")
-                            ul(class="d-flex") 
-                                li
-                                    img(src="images/ps.png", alt="포토샵")
-                                li
-                                    img(src="images/ai.png", alt="일러스트")
-                                li
-                                    img(src="images/js.png", alt="자바스크립트")
-                                li
-                                    img(src="images/ghub.png", alt="깃허브")
+            div(class="skills container")
+                ul(class="d-flex j-between my3") 
+                    li
+                        img(src="images/ps.png", alt="포토샵")
+                    li
+                        img(src="images/ai.png", alt="일러스트")
+                    li
+                        img(src="images/js.png", alt="자바스크립트")
+                    li
+                        img(src="images/ghub.png", alt="깃허브")
             article 
                 h3(class="t-center py2") Portfolio 
                 div(class="container_small d-flex j-between")
