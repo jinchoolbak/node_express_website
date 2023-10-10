@@ -98,6 +98,17 @@
     max-width: 700px;
     margin: 0 auto;
 }
+
+h3 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+hr {
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+}
 /*-------------------header--------------------------*/
 
 .slogan_title {
@@ -119,7 +130,7 @@
     height: 2rem;
     border-radius: 2rem;
     border: 0;
-    background: rgb(201, 137, 20);
+    background: rgb(243, 94, 8);
     color: var(--primary-color);
 }
 
@@ -226,10 +237,25 @@
 
 /*---------------portfolio-next-prev----------------------*/
 .n-img {
-    width: 400px;
+    text-align: center;
+    width: 350px;
     height: 300px;
+    margin: 2rem 0;
     background: var(--third-color);
 }
+
+.n-img img {
+    width: 300px;
+    height: 300px;
+}
+
+.n-img li {
+    background-color: var(--third-color);
+    border: 0;
+    border-radius: 30px;
+    margin: 1rem 0;
+    width: 75px;
+} 
 /*---------------contact----------------------*/
 .c-wrap {
     max-width: 500px;
