@@ -129,13 +129,14 @@ hr {
     width: 6rem;
     height: 2rem;
     border-top-left-radius: 1rem;
+    background: var(--secondary-color);
     border: 0;
-    background: rgb(243, 94, 8);
     color: var(--primary-color);
 }
 
 .btn_request:hover {
-    background: var(--secondary-color);
+    background: rgb(243, 94, 8);
+    color: white;
     margin-left: .5rem;
 }
 
@@ -231,7 +232,7 @@ hr {
 }
 
 .c-btn > button:hover {
-    background: burlywood;
+    background: rgb(243, 94, 8);
     color: var(--primary-color);
 }
 
@@ -269,7 +270,7 @@ hr {
 }
 
 #sortation li:nth-child(1) {
-    margin-right: 25%;
+    margin-right: 10%;
     font-weight: 600;
 }
 
@@ -297,12 +298,13 @@ hr {
 .send > button {
     display: block;
     margin: 1rem auto;
-    background: burlywood;
+    background: rgb(243, 94, 8);
+    color: var(--secondary-color);
     border: 0;
-    padding: 1rem;
+    padding: .5rem;
 }
 
 .send > button:hover {
-    background: var(--primary-color);
+    background: rgb(40, 40, 233);
     color: var(--secondary-color);
 }
