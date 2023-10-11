@@ -135,7 +135,7 @@ hr {
 }
 
 .btn_request:hover {
-    background: rgb(243, 94, 8);
+    background: rgb(40, 40, 233);
     color: white;
     margin-left: .5rem;
 }
@@ -298,13 +298,25 @@ hr {
 .send > button {
     display: block;
     margin: 1rem auto;
-    background: rgb(243, 94, 8);
-    color: var(--secondary-color);
-    border: 0;
+    border: 1px solid #333;
     padding: .5rem;
 }
 
 .send > button:hover {
     background: rgb(40, 40, 233);
+    color: var(--secondary-color);
+}
+/*---------------contact----------------------*/
+.contact_list, .contact_list th, .contact_list td {
+    border: 1px solid #333;
+    border-collapse: collapse;
+}
+
+.contact_list th, .contact_list td {
+    padding: 1rem;
+}
+
+.contact_list th {
+    background: var(--primary-color);
     color: var(--secondary-color);
 }

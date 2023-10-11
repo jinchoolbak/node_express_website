@@ -66,6 +66,18 @@ app.post("/contactAdd", (req, res) => {
     );
 });
 
+app.get("/contactList", (req, res) => {
+    let sql = "SELECT * FROM contact.contacts ORDER BY id DESC;";
+    // simple query
+    conn.query(
+        sql,
+        function(err, results, fields) {
+            // console.log(results); // results contains rows returned by server
+            res.render("contactList", {dataset: results})
+        }
+    );
+});
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
