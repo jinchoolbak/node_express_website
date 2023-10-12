@@ -46,7 +46,7 @@ app.get("/contact", (req, res) => {
 });
 //등록하려는 문의 정보를 서버로 전송!
 app.post("/contactAdd", (req, res) => {
-    let type = req.body.title == 1 ? "요청" : "문의";
+    let type = req.body.type == 1 ? "요청" : "문의";
     let name = req.body.name;
     let phone = req.body.phone;
     let email = req.body.email;
