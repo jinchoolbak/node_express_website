@@ -15,7 +15,7 @@ html(lang="ko")
             article 
                 h3(class="t-center py3") About 
                 hr(class="container_small py2")
-                div(class="container_small d-flex j-between")
+                div(id="about" class="container_small d-flex j-between")
                     div(class="avatar")
                         img(src="images/avata.jpg" wdith="210px" height="270px", alt="내사진")
                     div(class="about")
@@ -47,33 +47,32 @@ html(lang="ko")
                                 li(class="d-flex g1") 
                                     p(class="t-bold") Goethe-Zertifikat A2
                                     p 2019
-                                li(class="d-flex g1") 
-                                    p(class="t-bold") 검도 1단
-                                    p 2016
-            div(class="skills container")
-                ul(class="d-flex j-between my3") 
-                    li
-                        img(src="images/ps.png", alt="ps")
-                    li
-                        img(src="images/ai.png", alt="ai")
-                    li
-                        img(src="images/id.png", alt="id")
-                    li
-                        img(src="images/fi.png", alt="figma")
-                    li
-                        img(src="images/js.png", alt="html5 css Javascript jQuery")
-                    li
-                        img(src="images/js.png", alt="Node.js React.js pug")
-                    li
-                        img(src="images/git.png", alt="git")
+            article
+                h3(class="container py3") Skills
+                div(class="skills container")
+                    ul(class="d-flex j-between my3") 
+                        li
+                            img(src="images/ps.png", alt="ps")
+                        li
+                            img(src="images/ai.png", alt="ai")
+                        li
+                            img(src="images/id.png", alt="id")
+                        li
+                            img(src="images/fi.png", alt="figma")
+                        li
+                            img(src="images/js.png", alt="html5 css Javascript jQuery")
+                        li
+                            img(src="images/js.png", alt="Node.js React.js pug")
+                        li
+                            img(src="images/git.png", alt="git")
             article 
                 h3(class="t-center py3") Portfolio 
                 hr(class="container py2")
-                div(class="container_small d-flex j-between")
+                div(class="container d-flex j-between")
                     div(class="prev")
                         i(class="fa-solid fa-angle-left")
                     div(class="port_img")
-                        img(src="images/port1.png" width="500px" height="300px", alt="작업물1")
+                        img(src="images/port1.png" width="700px" height="500px", alt="작업물1")
                     div(class="portfolio")    
                         div(class="p-info")
                             ul 
@@ -97,21 +96,21 @@ html(lang="ko")
                         i(class="fa-solid fa-angle-right")
             article 
                 h3(class="t-center py3") Poster 
-                div(class="container d-flex j-center g3")
+                div(class="poster container d-flex j-center g3")
                     div(class="pos_img")
                         ul(class="d-flex g1 my1") 
                             li(class="pos1")
                                 a(href="#")  
-                                    img(src="images/pos1.jpg" width="300px" height="300px", alt="포스터1")
+                                    img(src="images/pos1.jpg" width="600px" height="500px", alt="포스터1")
                             li(class="pos2")
                                 a(href="#")  
-                                    img(src="images/pos2.png" width="400px" height="300px", alt="포스터2")
+                                    img(src="images/pos2.png" width="400px" height="500px", alt="포스터2")
                         ul(class="d-flex g1") 
                             li(class="pos3")
                                 a(href="#")  
-                                    img(src="images/pos3.jpg" width="400px" height="300px", alt="포스터3")
+                                    img(src="images/pos3.jpg" width="400px" height="500px", alt="포스터3")
                             li(class="pos4")
                                 a(href="#")  
-                                    img(src="images/pos4.png" width="300px" height="300px", alt="포스터4")
+                                    img(src="images/pos4.png" width="600px" height="500px", alt="포스터4")
         include includes/comm_footer.pug
     
