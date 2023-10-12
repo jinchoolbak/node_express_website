@@ -66,6 +66,22 @@ app.post("/contactAdd", (req, res) => {
     );
 });
 
+//삭제용 쿼리작성
+app.get("/contactDel", (req, res) => {
+    let del_no = req.query.id;
+    let sql = `DELETE from contact.contacts WHERE id=${del_no}`;
+
+    conn.query(
+        sql,
+        function(err, results, fields) {
+            if(err) throw new error("알수없는 에러가 발생");
+            console.log('문의가 삭제되었습니다');
+            res.send("<script>alert('삭제되었습니다'); location.href='/contactList';</script>");
+        }
+    );   
+    
+})
+
 app.get("/contactList", (req, res) => {
     let sql = "SELECT * FROM contact.contacts ORDER BY id DESC;";
     // simple query
